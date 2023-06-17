@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg {
+            background-color: #100f3d;
+
+        }
+
+        h2 {
+            color: #100f3d;
+            margin: 10px;
+
+        }
+
+        .card {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            margin: 20px;
+
+            text-align: center;
+
+        }
+
+        .navbar {
+            padding: 15px;
+        }
+
+
+        .container-fluid {
+            text-align: center;
+            background-color: #100f3d;
+            color: white;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .navbar-brand:hover {
+            color: white;
+        }
+
+        .nav-link {
+            color: white !important;
+
+        }
+
+        .nav-btn {
+            background-color: transparent;
+
+            border-color: white;
+        }
+
+        .card-title {
+            color: #100f3d;
+
+        }
+
+        .nav-btn:hover {
+            background-color: #fff;
+            color: #100f3d;
+
+        }
+
+        .buy {
+            background-color: #F57224;
+            border: #F57224;
+
+        }
+
+        .buy:hover {
+            background-color: #f57224;
+        }
+
+        .buy::after {
+            background-color: #F57224;
+        }
+
+        .price {
+            color: #F57224;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #100F3D;">
+        <!-- Logo -->
+        <div class="container-fluid">
+            <img src="/images/cart.png" alt="Ecommece" style="width: 30px;height: 30px;margin-right: 10px;">
+            <a class="navbar-brand" href="./index.html" style="color: white;font-weight: bold;font-family: bahnschrift;">E-Commerce
+                Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"
+                            style="color: white;font-family: bahnschrift;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html"
+                            style="color: white;font-family: bahnschrift;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html" style="color: white;font-family: bahnschrift;">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html" style="color: white;font-family: bahnschrift;">Contact
+                            Us</a>
+                    </li>
+                </ul>
+
+                <a class="nav-link" href="./signup.html"><button class="btn btn-outline-light"
+                        style="font-family: bahnschrift;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;"
+                        onclick="window.location.href='signup.html'">Register</button></a>
+                <a class="nav-link" href="./login.html"><button class="btn btn-outline-light"
+                        style="font-family: bahnschrift;margin-top: 10px;margin-bottom: 10px;"
+                        onclick="window.location.href='login.html'">Login</button></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <center>
+        <h2 class="">Our Recent Products</h2>
+    </center>
+    <div class="lg-12">
+        <div class="card" style="width: 18rem;">
+            <img src="./images/pro1.png" class="card-img-top" alt="smart-watch"
+                style="height: 200px; width: 200px;display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title p-name">Smart Watch</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">4,999 Rs</h5>
+                <p class="card-text" style="text-align: justify;">Our Smart Watch combines style, functionality, and
+                    cutting-edge technology to
+                    enhance
+                    your daily life. With its sleek design and advanced features, it's more than just a timepiece.</p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/pro2.png" class="card-img-top" alt="iphone"
+                style="height: 200px; width: 200px; display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Iphone</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">350,999 Rs</h5>
+                <p class="card-text" style="text-align: justify;">The iPhone is a revolutionary smartphone that has
+                    redefined the way we communicate,
+                    work, and stay entertained. Packed with powerful features and a sleek design.
+
+                </p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/pro3.png" class="card-img-top" alt="laptop"
+                style="height: 200px; width: 200px;display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">130,000 Rs</h5>
+                <p class="card-text" style="text-align: justify;">Our laptops are designed to empower you with the
+                    ultimate computing experience,
+                    whether
+                    you're working, studying, or enjoying entertainment on the go. Combining sleek design.</p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/pro4.png" class="card-img-top" alt="dress"
+                style="height: 200px; width: 200px;display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Dress</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">7,999 Rs</h5>
+                <p class="card-text" style="text-align: justify;">Our dress coat is the epitome of timeless elegance and
+                    sophisticated style. Crafted
+                    with meticulous attention to detail, it is designed to elevate your formal attire and make a lasting
+                    impression.</p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/Pro5.jpg" class="card-img-top" alt="water-bottle"
+                style="height: 200px; width: 200px;display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Water Bottle</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">1,999 Rs</h5>
+                <p class="card-text" style="text-align: justify;">Stay hydrated on the go with our high-quality water
+                    bottle. Designed for
+                    convenience
+                    and sustainability, it is the perfect companion for your active lifestyle.</p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/pro6.png" class="card-img-top" alt="electric-fan"
+                style="height: 200px; width: 200px;display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Electric Fan</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">3,999 Rs</h5>
+                <p class="card-text" style="text-align: justify;">Beat the heat and stay cool with our powerful and
+                    efficient electric fan. Designed
+                    to
+                    provide refreshing airflow, it is the perfect solution for hot summer days and stuffy environments.
+                </p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/pro7.png" class="card-img-top" alt="bag"
+                style="height: 200px; width: 200px;display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Bag</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">1,599 Rs</h5>
+                <p class="card-text" style="text-align: justify;">Discover the perfect blend of style, functionality,
+                    and durability with our
+                    versatile
+                    bags. Designed to suit your everyday needs, our bags are crafted with meticulous.</p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="./images/pant.png" class="card-img-top" alt="pant"
+                style="height: 200px; width: 200px; display: block; margin: auto;">
+            <div class="card-body">
+                <h5 class="card-title">Pant</h5>
+                <div>⭐⭐⭐⭐⭐</div>
+                <h5 class="price">1,999 Rs</h5>
+                <p class="card-text" style="text-align: justify;">Elevate your wardrobe with our stylish and comfortable
+                    pants. Designed with a
+                    perfect
+                    blend of fashion and functionality, our pants offer versatility for both casual and formal
+                    occasions.
+                </p>
+                <a href="#" class="btn btn-primary buy">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <footer class="" style="padding-top: 3rem;">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5>E-COMMERCE STORE</h5>
+                    <p>At Our Ecommerce Store, we are passionate about providing exceptional products and an
+                        unparalleled shopping experience. We strive to offer a curated selection of high-quality items
+                        that meet the diverse needs and tastes of our valued customers.</p>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5>LINKS</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-white">Home</a></li>
+                        <li class="nav-item mb-2"><a href="./products.html" class="nav-link p-0 text-white">Products</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="./cart.html" class="nav-link p-0 text-white">Cart</a></li>
+                        <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-white">Contact
+                                Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+                    <h5>LINKS</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Facebook</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Instagram</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Twitter</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Linkedin</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-copyright text-center py-3">
+                <p>&copy; 2020 Copyright: ecommerce-store.com</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
